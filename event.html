@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img id="cute" src="https://m.media-amazon.com/images/I/813Vw-TDRUL.png" alt="Old Img" width="300">
+
+    <button onclick="changeImage()">Change Image</button>
+
+    <script>
+        function changeImage() {
+            let img = document.getElementById("cute");
+            img.src = "https://play-lh.googleusercontent.com/YxP0iIjEejtJRehU9XwOSHyuNJRHln7H-tYtp4QtyoKDRYM70wXneycwKgLk74Obw1c"; 
+            img.alt = "New Img"; 
+        }
+    </script>
+
+</body>
+</html>

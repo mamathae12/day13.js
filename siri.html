@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myname {
+            display: block;
+            padding: 10px;
+            background-color: lightblue;
+            text-align: center;
+            width: 200px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="myname">Hello, I am Siri!!!</div>
+    <button onclick="toggle()">Toggle</button>
+
+    <script>
+        function toggle() {
+            let element = document.getElementById("myname");
+            if (element.style.display === "none") {
+                element.style.display = "block"; 
+            } else {
+                element.style.display = "none"; 
+            }
+        }
+    </script>
+
+</body>
+</html>

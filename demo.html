@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            display: flex;
+             justify-content: center; 
+            align-items: center;
+            height: 100vh;
+           
+        }
+        img {
+            width: 800px;
+            height: auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var img= document.createElement("img")
+        img.setAttribute("src", "https://us.123rf.com/450wm/rotorania/rotorania2308/rotorania230808515/211540407-panda-bear-couple-in-winter-forest-3d-rendered-illustration.jpg?ver=6")
+        document.body.append(img);
+        let images = ["https://wallpapercat.com/w/full/b/7/1/25012-1920x1080-desktop-full-hd-panda-wallpaper.jpg","https://t3.ftcdn.net/jpg/06/89/02/46/360_F_689024682_QbToDsnJcWM0ZF15R7rc2brIhmoWZl3P.jpg","https://wallpapers.com/images/hd/cute-cartoon-panda-couple-mqbjnbt7vyuenxjj.jpg","https://img.freepik.com/premium-photo/two-cute-pandas-love-hearts-romantic-generative-ai_791316-12450.jpg"]
+       
+            let btn = document.createElement("button")
+            btn.innerText = "panda1"
+            let btn2 = document.createElement("button")
+            btn2.innerText = "panda2"
+            let btn3 = document.createElement("button")
+            btn3.innerText = "panda3"
+            let btn4 = document.createElement("button")
+            btn4.innerText = "panda4"
+            document.body.append(btn, btn2, btn3, btn4)
+            btn.addEventListener("click",function(){
+                img.src = "https://wallpapercat.com/w/full/b/7/1/25012-1920x1080-desktop-full-hd-panda-wallpaper.jpg"
+            })
+            btn2.addEventListener("click",function(){
+                img.src = "https://t3.ftcdn.net/jpg/06/89/02/46/360_F_689024682_QbToDsnJcWM0ZF15R7rc2brIhmoWZl3P.jpg"
+    
+            })
+            btn3.addEventListener("click",function(){
+                img.src = "https://wallpapers.com/images/hd/cute-cartoon-panda-couple-mqbjnbt7vyuenxjj.jpg"
+            })
+            btn4.addEventListener("click",function(){
+                img.src = "https://img.freepik.com/premium-photo/two-cute-pandas-love-hearts-romantic-generative-ai_791316-12450.jpg"
+            })
+        
+    </script>
+</body>
+</html>
